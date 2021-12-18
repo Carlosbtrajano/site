@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: 35px;
+    padding-bottom: 20px;
+}
+
+/* MENU */
+
+.div-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.div-menu li{
+    list-style: none;
+}
+
+.div-menu a{
+    text-decoration: none;
+    margin: 0 40px;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+
+.div-menu a:hover{
+    text-decoration: underline;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+/* SESSÃO ESQUERDA PERFIL */
+
+.div-preto{
+    background: black;
+    color: white;
+    grid-row: 1/5;
+    text-align: center;
+}
+
+.div-img{
+    background-image: url('../imagens/carlos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.div-preto h1{
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.div-preto h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.div-preto h3{
+    margin-bottom: 30px;
+}
+
+.div-preto p{
+    font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.div-preto a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+/* SESSÃO SOBRE */
+
+.sobre{
+    background:#e8e3db;
+    padding: 50px 30px;
+    /* height: 40vh; */
+}
+
+.sobre h2{
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.sobre p{
+    font-size: 20px;
+}
+
+/* SESSÃO HABILIDADES */
+
+.habilidades{
+    background: white;
+    grid-column: 2/3;
+    padding: 50px 30px; 
+    padding-bottom: 50px;
+}
+
+.habilidades h2{
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.habilidades ul{
+    margin-left: 20px;
+    font-size: 20px;
+   
+}
+
+.habilidades li{
+    padding: 8px 0px;
+}
+
+.habilidades p{
+    font-size: 20px;
+}
+
+/* habilidades article técnicas */
+
+.tecnicas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.tecnicas div{
+    flex: 1 1 200px;
+    margin-top: 10px;
+    margin: 5px;
+}
+
+.habi-tecnicas h3, .habi-comportamentais h3{
+    text-align: center;
+}
+
+.habi-tecnicas, .habi-comportamentais{
+    border: 1px solid black;
+    background: #1F1F1F;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.tecnicas ul{
+    margin-top: 30px;
+}
+
+
+/* SESSÃO TECNOLOGIA */
+
+.div-tec{
+    background:#e8e3db;
+    grid-column: 2/3;
+    padding: 50px 30px;
+}
+
+.div-tec h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.div-tec p{
+    font-size: 20px;
+}
+
+span p{
+    margin-bottom: 60px;
+}
+
+.container-tec{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-tec h2{
+    font-size: 30px;
+}
+
+.tec1, .tec2, .tec3, .tec4{
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    flex: 1 1 80px;
+    text-align: center;
+    color: white;
+}
+
+.tec1{
+    background: #403A3A;
+}
+
+.tec2{
+    background: #363030;
+}
+
+.tec3{
+    background: #2B2626;
+}
+
+.tec4{
+    background: #201D1D;
+}
+
+/* footer{
+    grid-column: 1/3;
+    background: #333333;
+    height: 15vh;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+} */
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 1024px){
+    .container-tec div{
+        margin: 20px;
+        flex: 1 1 200px;
+    }
+}
+
+@media(max-width: 890px){
+    .div-menu a{
+        margin: 15px;
+    }
+}
+
+@media(max-width: 760px){
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        background: black;
+    }
+
+    .div-preto{
+        margin: auto;
+    }
+
+    .div-menu{
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .div-menu a{
+        color: white;
+    }
+
+    .habilidades{
+        background: white;
+        width: 100%;
+    }
+}
+
+@media(max-width: 485px){
+   .div-menu ul{
+       display: flex;
+       flex-direction: column;
+   }
+
+   .div-menu li{
+       padding: 10px 0px;
+       margin-bottom: 50px;
+   }
+
+}
+
